@@ -1,0 +1,37 @@
+.topbar {
+    background-color: #1976d2 !important;
+}
+
+.MuiDrawer-paper {
+    background-color: #1976d2 !important;
+    color: white !important;
+}
+
+.MuiSvgIcon-root {
+    color: white;
+}
+
+.none{
+    display: none;
+}
+
+.notifi-box{
+    padding: 20px;
+    width: 300px;
+	/* height: 200px; */
+	opacity: 1;
+	position: absolute;
+	top: 63px;
+	right: 55px;
+    font-size: small;
+    background-color: white;
+    /* transition: 1s ease-in; */
+	transition: 1s opacity, 250ms height;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: black;
+    border-radius: 5%;
+}
+
+.logo-app img{
+    height: 45px;
+}

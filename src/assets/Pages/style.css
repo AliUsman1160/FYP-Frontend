@@ -1,0 +1,254 @@
+.mob-con {
+  display: flex;
+  margin: 1%;
+}
+.mob-card {
+  margin: 1%;
+}
+
+.card {
+  --main-color: #000;
+  --submain-color: #78858f;
+  --bg-color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+  width: 300px;
+  height: 384px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background: var(--bg-color);
+}
+
+.card__img {
+  height: 192px;
+  width: 100%;
+}
+
+.card__img svg {
+  height: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.card__avatar {
+  position: absolute;
+  width: 114px;
+  height: 114px;
+  background: var(--bg-color);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: calc(50% - 57px);
+}
+
+.card__avatar svg {
+  width: 100px;
+  height: 100px;
+}
+
+.card__title {
+  margin-top: 60px;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--main-color);
+}
+
+.card__subtitle {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--submain-color);
+}
+
+.card__btn {
+  margin-top: 15px;
+  width: 76px;
+  height: 31px;
+  border: 2px solid var(--main-color);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--main-color);
+  background: var(--bg-color);
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.card__btn-solid {
+  background: var(--main-color);
+  color: var(--bg-color);
+}
+
+.card__btn:hover {
+  background: var(--main-color);
+  color: var(--bg-color);
+}
+
+.card__btn-solid:hover {
+  background: var(--bg-color);
+  color: var(--main-color);
+}
+
+/* ===============SS==================== */
+.select-con {
+  margin: 2%;
+  padding: 25px;
+  background-color: #1976d2;
+  border-radius: 25px;
+}
+.select-con h4 {
+  font-size: 1.2rem;
+}
+/* .pic-con{
+  max-width: 1478.73px;
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: 2%; */
+/* margin-left: 2%; */
+/* 
+  padding: 25px;
+} */
+
+.row-pic {
+  justify-content: center;
+}
+.img-con {
+  display: flex;
+  justify-content: center;
+}
+
+.pic-con .row {
+  width: 100% !important;
+}
+/* .img-con{
+  width: 100%;
+} */
+.img-con img {
+  margin: 1%;
+  width: 100%;
+  height: 400px;
+}
+
+
+
+
+
+/* ===================home screen===================== */
+
+/* .charts-con{
+  max-width: 100%;
+  width: 100%;
+} */
+/* .chart-con{
+  width: 100%;
+  max-width: 100%;
+} */
+
+.card-h {
+  width: 300px;
+  height: 100px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #ffffff;
+  color: #1976d2;
+  display: flex;
+  align-items: center;
+  border-left: 5px solid #1976d2;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  background-color: #ffffff;
+  color: #1976d2;
+  display: flex;
+  align-items: center;
+  border-left: 5px solid #1976d2;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+}
+
+/* ==================notification=========================== */
+
+.notification-con {
+  background-color: #ffffff;
+  height: 100vh;
+  /* max-width: 100% !important; */
+  /* width: 100% !important; */
+}
+.notification {
+  /* border: #000 2px solid; */
+  max-height: 100px;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1%;
+  background-color: white;
+  border-left: 5px solid #1976d2;
+  justify-content: space-between;
+  /* border-left-color: black;  */
+  border-radius: 10px;
+}
+.notification img {
+  height: 50px;
+}
+.notify {
+  display: flex;
+  align-items: center;
+}
+/* .notification h6{
+  float: right;
+} */
+.notitime {
+  color: #1976d2;
+  align-self: flex-end;
+  /* float: right; */
+}
+
+/*==============Settings================= */
+.setting-account {
+  padding: 20px;
+  /* border: #000 1px solid; */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.setting-head h2 {
+  font-weight: 700;
+}
+.acc-head h4 {
+  font-weight: 600;
+  color: #bab2b2;
+}
+
+.setting-icon {
+  color: #221c1c;
+}
